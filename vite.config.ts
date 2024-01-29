@@ -5,11 +5,11 @@ import react from '@vitejs/plugin-react'
 export  default  defineConfig ( ( { command } ) =>  { 
   const  config = { 
     plugins : [ react ()], 
-    base :  '/social-media-theme-switcher/' , 
+    base :  '/' , 
   } 
 
   if  (command !==  'serve' ) { 
-    config. base  =  '/social-media-theme-switcher/' 
+    config. base  =  '/social-media-theme-switcher' 
   } 
 
   return  config 
