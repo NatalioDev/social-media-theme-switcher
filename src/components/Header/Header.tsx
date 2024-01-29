@@ -2,7 +2,7 @@
 import './Header.css'
 
 // Importar el manejador de temas 
-import { useTheme } from '../../context/UseTheme'
+import { useTheme } from '../../context/UseTheme.tsx'
 
 // Componente funcional para el encabezado
 export default function Header() {

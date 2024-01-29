@@ -1,5 +1,5 @@
 // Importar el manejador de temas 
-import { useTheme } from "../../context/UseTheme";
+import { useTheme } from "../../context/UseTheme.tsx";
 // Importar estilos de Profile.css
 import "./Profile.css"
 

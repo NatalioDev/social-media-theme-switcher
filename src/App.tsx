@@ -1,7 +1,7 @@
 import './App.css'
-import Header from './components/Header/Header'
-import SocialOverview from './components/CardSm/SocialOverview'
-import SocialTop from './components/CardTop/CardTop'
+import Header from './components/Header/Header.tsx'
+import SocialOverview from './components/CardSm/SocialOverview.tsx'
+import SocialTop from './components/CardTop/CardTop.tsx'
 
 function App() {
 

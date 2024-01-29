@@ -1,11 +1,11 @@
 // Importar estilos de SocialOverview.css
 import "./SocialOverview.css"
 // Importar componente CardSm
-import CardSm from "./CardSm"
+import CardSm from "./CardSm.tsx"
 // Importar datos de las tarjetas CardSm
-import dataCardSm from "../../data/DataCardSm"
+import dataCardSm from "../../data/DataCardSm.ts"
 // Importar el manejador de temas 
-import { useTheme } from "../../context/UseTheme";
+import { useTheme } from "../../context/UseTheme.tsx";
 
 
 // Componente funcional de la sección Social Overview

@@ -1,9 +1,9 @@
 // Importar componente Profile
-import Profile from "./Profile";
+import Profile from "./Profile.tsx";
 // Importar estilos CardTop.css
 import "./CardTop.css"
 // Importar datos de DataCard
-import dataCard from "../../data/DataCard";
+import dataCard from "../../data/DataCard.ts";
 
 // Componente funcional
 export default function SocialTop() {
