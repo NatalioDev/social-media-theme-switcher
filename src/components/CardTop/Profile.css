@@ -1,0 +1,148 @@
+/* Estilos generales de la sección que contiene la tarjeta (mobile first) */
+.article-profile{
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.9s ease-in;
+    background-color: hsl(228, 28%, 20%);
+    color: rgba(255, 255, 255, 0.87);
+}
+
+/* Estilos que modifica la tarjeta si está en modo oscuro */
+.article-profile.dark-mode {
+    background-color: var(--color-light-greyish-blue);
+}
+
+/* Estilos para cuando pasan el mouse sobre la tarjeta */
+.article-profile:hover{
+    filter: contrast(90%);
+    transition: none;
+}
+
+/* Estilo para el borde de la parte superior de la primera tarjeta */
+.article:nth-child(1){
+    border-top: 4px solid var(--color-facebook-blue);
+}
+
+/* Estilo para el borde de la parte superior de la segunda tarjeta */
+.article:nth-child(2){
+    border-top: 4px solid var(--color-twitter-blue);
+}
+
+/* Estilos para el borde de la parte superior de la tercera tarjeta */
+.article:nth-child(3) {
+    position: relative;
+    height: 214px;
+
+}
+.article:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, var(--color-instagram-orange), var(--color-instagram-pink));
+}
+/* Fin de estilos para la tercera tarjeta */
+
+/* Estilo para el borde de la parte superior de la cuarta tarjeta */
+.article:nth-child(4){
+    border-top: 4px solid var(--color-youtube-red);
+}
+
+/* Estilos para el encabezado de la tarjeta */
+.article-header{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    margin-bottom: -1.7rem;
+    padding: 0;
+}
+
+/* Estilos para el título que muestra la cantidad de seguidores de la tarjeta */
+.article-h1{
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+    font-size: 3.7rem;
+    font-weight: 700;
+    transition: all 1s ease-in;
+}
+
+/* Estilo que modifica el color de la cantidad de seguidores cuando cambia a modo claro */
+.article-h1.light-mode-h1{
+    color: var(--color-very-dark-blue);
+}
+/* Estilo que modifica el color de la cantidad de seguidores cuando cambia a modo oscuro */
+.article-h1.dark-mode-h1{
+    color: var(--color-white);
+}
+
+/* Estilos para el título que describe la cantidad de seguidores de la tarjeta */
+.article-h3{
+    font-size: 0.75rem;
+    padding: 0;
+    font-weight: 501;
+    text-transform: uppercase;
+    margin: -0.5rem 0 -0.5rem 7px;
+    letter-spacing: .255rem;
+    transition: all 1s ease-in;
+}
+/* Estilo que modifica el color del título que describe la cantidad de seguidores cuando cambia a modo claro */
+.article-h3.light-mode-h3{
+    color: var(--color-dark-greyish-blue);
+}
+/* Estilo que modifica el color del título que describe la cantidad de seguidores cuando cambia a modo oscuro */
+.article-h3.dark-mode-h3{
+    color: var(--color-desaturated-blue);
+}
+
+/* Estilos para el título del nombre de usuario de la tarjeta */
+.article-header-h4{
+    margin-left: 7px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: all 1s ease-in;
+}
+/* Estilo para el color del título del nombre de usuario de la tarjeta en modo claro */
+.article-header-h4.light-mode-h4{
+    color: var(--color-dark-greyish-blue);
+}
+/* Estilo para el color del título del nombre de usuario de la tarjeta en modo oscuro */
+.article-header-h4.dark-mode-h4{
+    color: var(--color-desaturated-blue)
+}
+
+/* Estilos para el título de los seguidores del día */
+.article-h6{
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+/* Estilos para el color del título de los seguidores del día según sean crecientes o decrecientes */
+.article-h6.increase {
+    color: var(--color-lime-green);
+}
+.article-h6.decrease {
+    color: var(--color-bright-red);
+}
+/* ---- */
+
+/* Estilos de los iconos creciente/decreciente */
+.icon-up {
+    content: url(../../assets/images/icon-up.svg);
+    position: relative;
+    top: -1px;
+    left: -4px;
+}
+
+.icon-down {
+    content: url(../../assets/images/icon-down.svg);
+    position: relative;
+    top: -1px;
+    left: -4px;
+}
+

@@ -1,0 +1,69 @@
+/* Mobile First: */
+/* Estilos para el Título Social Overview */
+.title-social-overview{
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: all 1s ease-in;
+    width: auto;
+}
+/* Estilos para el color del Título Social Overview en modo oscuro */
+.title-social-overview.dark-title-social-overview{
+    color: var(--color-white);
+}
+/* Estilos para el color del Título Social Overview en modo claro */
+.title-social-overview.light-title-social-overview{
+    color: var(--color-very-dark-blue);
+}
+
+/* Estilos para la sección que contiene las tarjetas sm */
+.container-social-overview{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    row-gap: 1.75rem;
+    width: auto;
+}
+
+/* Estilos para pantallas medianas aquí */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .title-social-overview{
+        width: auto;
+    }
+    .container-social-overview{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 1.75rem;
+        width: auto;
+    }
+}
+
+/* Estilos para pantallas medianas/grandes aquí */
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    .title-social-overview{
+        width: auto;
+    }
+    .container-social-overview{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        row-gap: 1.75rem;
+        width: auto;
+    }
+}
+
+/* Estilos para pantallas grandes aquí */
+@media only screen and (min-width: 1200px) {
+    .title-social-overview{
+        width: auto;
+    }
+    .container-social-overview{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+        row-gap: 1.75rem;
+        width: auto;
+    }
+}

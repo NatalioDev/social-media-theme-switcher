@@ -1,0 +1,100 @@
+/* Mobile First */
+/* Estilos de la sección que contiene las tarjetas sm  */
+.article-social-overview{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    grid-template-rows: repeat(2, min-content);
+    grid-row-gap: 0.7rem;
+    border-radius: 6px;
+    padding: 26px 30px 19px 23px;
+    margin: 0;
+    height: 80px;
+    transition: all 0.9s ease-in;
+}
+
+/* Estilos para cuando pasa el mouse sobre las tarjetas sm */
+.article-social-overview:hover{
+    cursor: pointer;
+    filter: contrast(90%);
+}
+
+/* Estilos para bg de las tarjetas sm en el modo oscuro */
+.article-social-overview.dark-article-social-overview{
+    background-color: var(--color-dark-desaturated-blue);
+}
+/* Estilos para bg de las tarjetas sm en el modo claro */
+.article-social-overview.light-article-social-overview{
+    background-color: var(--color-light-greyish-blue);
+}
+
+/* Estilos para el título de Social Overview */
+.title-overview{
+    margin: -2px 0px 0px 0px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Estilos para el color del título de Social Overview en modo oscuro */
+.title-overview.dark-title-overview{
+    color: var(--color-desaturated-blue);
+}
+/* Estilos para el color del título de Social Overview en modo claro */
+.title-overview.light-title-overview{
+    color: var(--color-dark-greyish-blue);
+}
+
+/* Estilos para el icono de la red social de la tarjeta sm */
+.img-overview{
+    justify-self: end;
+}
+
+/* Estilos para el título de la cantidad de seguidores de la tarjeta sm */
+.views-overview{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 2px 0px 0px 0px;
+    padding: 0;
+}
+
+/* Estilos para el color del título de la cantidad de seguidores en modo oscuro */
+.views-overview.dark-views-overview{
+    color: var(--color-white);
+}
+/* Estilos para el color del título de la cantidad de seguidores en modo claro */
+.views-overview.light-views-overview{
+    color: var(--color-very-dark-blue);
+}
+
+/* Estilos para la cantidad de seguidores del día */
+.percentage-overview{
+    margin: 0;
+    padding-top: 22px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-lime-green);
+}
+
+/* Estilos para el color de la cantidad de seguidores del día si son crecientes */
+.percentage-overview.increase {
+    color: var(--color-lime-green);
+}
+/* Estilos para el color de la cantidad de seguidores del día si son decrecientes */
+.percentage-overview.decrease {
+    color: var(--color-bright-red);
+}
+
+/* Estilos para el icono creciente */
+.percentage-icon-up {
+    content: url(../../assets/images/icon-up.svg);
+    position: relative;
+    top: -2px;
+    left: -4px;
+}
+/* Estilos para el icono decreciente */
+.percentage-icon-down {
+    content: url(../../assets/images/icon-down.svg);
+    position: relative;
+    top: -1px;
+    left: -4px;
+}

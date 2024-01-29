@@ -1,0 +1,324 @@
+/* Estilos generales para la sección del encabezado (mobile first) */
+.section-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 2.1rem 0;
+    transition: all 0.5s ease-in;
+}
+
+/* Estilos para la sección del contenido social en el encabezado */
+.header-social{
+    margin-bottom: 1rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 1.5px solid var(--color-dark-greyish-blue);
+}
+
+/* Estilos para el título */
+.header-social h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: var(--color-very-dark-blue);
+}
+
+/* Estilos para el parrafo de estadísticas */
+.header-social p {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: var(--color-dark-greyish-blue);
+}
+
+/* Estilos para la etiqueta del interruptor del tema */
+.toggle-switch-label{
+    color: var(--color-dark-greyish-blue);
+}
+
+/* Estilos para el botón del interruptor del tema */
+.toggle-switch-button {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    background: linear-gradient(to right, hsl(230, 22%, 74%), hsl(230, 22%, 74%));
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+/* Estilos al pasar el mouse sobre el botón */
+.toggle-switch-button:hover{
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+}
+
+/* Estilos para el indicador visual del interruptor del tema */
+.toggle-switch-span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 18.5px;
+    height: 18.5px;
+    background-color: var(--color-very-pale-blue);
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+/* Estilos al pasar el mouse sobre la etiqueta del interruptor del tema */
+.toggle-switch-label:hover{
+    cursor: pointer;
+    color: var(--color-very-dark-blue);
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+}
+
+  /* Cambio de estilos en modo oscuro para la sección del encabezado */
+.header-dark-mode {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--color-desaturated-blue);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.5s ease-in;
+}
+
+/* Estilos adicionales para el modo oscuro */
+.header-social{
+    border-bottom: 1.5px solid var(--color-desaturated-blue);
+}
+
+.header-social.dark-header h1 {
+    color: var(--color-white);
+}
+
+.header-social.dark-header p {
+    color: var(--color-desaturated-blue);
+}
+
+.toggle-switch-label.dark-mode{
+    color: var(--color-desaturated-blue);
+}
+
+.toggle-switch-label.dark-mode:hover{
+    color: var(--color-white);
+    cursor: pointer;
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+
+.toggle-switch-button.dark-mode {
+    background: linear-gradient(to right, var(--color-toggle-1), var(--color-toggle-2));
+    border-radius: 15px;
+    border-color: var(--color-dark-desaturated-blue);
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.toggle-switch-button.dark-mode:hover{
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+}
+
+.toggle-switch-span.dark-mode{
+    transform: translate(-100%, -50%);
+    background-color: var(--color-very-dark-blue-2);
+
+}
+
+/* Fin de estilos adicionales para el modo oscuro */
+
+
+/* Estilos para pantallas grandes aquí */
+
+@media only screen and (min-width: 1200px) {
+    .section-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1440px;
+        padding: 36px 0px 24px 0px;
+        margin: 0 auto;
+        transition: all 0.5s ease-in;
+    }
+    
+    /* Ajustes para la sección social */
+    .header-social{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .header-social h1 {
+        font-size: 29px;
+        font-weight: 700;
+        margin: 0px 0px -6px 0px;
+        color: var(--color-very-dark-blue);
+    }
+    
+    .header-social p {
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 4px;
+        color: var(--color-dark-greyish-blue);
+    }  
+    /* Fin para los ajustes de la sección social */
+
+    /* Ajustes para la sección del interruptor del modo oscuro */
+    .header-dark-mode {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        justify-content: space-between;
+        width: 158px;
+        color: var(--color-desaturated-blue);
+        font-weight: 700;
+        font-size: 0.95rem;
+        transition: all 0.5s ease-in;
+    }
+    
+    /* Ajustes para la etiqueta del modo oscuro */
+    .toggle-switch-label{
+        background-color: transparent;
+    }
+    
+    /* Ajustes para el botón del interruptor del modo oscuro */
+    .toggle-switch-button {
+        position: relative;
+        right: 15px;
+        width: 48px;
+        height: 24px;
+        background: linear-gradient(to right, hsl(230, 22%, 74%), hsl(230, 22%, 74%));
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        transition: all 1s ease-in;
+    }
+    
+    .toggle-switch-button:hover{
+        -webkit-filter: brightness(120%);
+        filter: brightness(120%);
+    }
+    /* Fin de los ajustes del botón */
+
+    /* Ajustes del indicador visual del modo oscuro */
+    .toggle-switch-span {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 18.5px;
+        height: 18.5px;
+        background-color: var(--color-very-pale-blue);
+        border-radius: 50%;
+        transition: all 0.5s ease-in;
+        cursor: pointer;
+    }
+    
+    .toggle-switch-label:hover{
+        cursor: pointer;
+        color: var(--color-very-dark-blue);
+        -webkit-filter: brightness(120%);
+        filter: brightness(120%);
+    }
+  }
+
+/* Estilos para tabletas y pantallas pequeñas aquí */
+
+  @media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .section-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        padding: 36px 0px 24px 0px;
+        margin: 0 auto;
+        transition: all 0.5s ease-in;
+    }
+    
+    /* Ajustes para la sección social */
+    .header-social{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    
+    .header-social h1 {
+        font-size: 29px;
+        font-weight: 700;
+        margin: 0px 0px -6px 0px;
+        color: var(--color-very-dark-blue);
+    }
+    
+    .header-social p {
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 4px;
+        color: var(--color-dark-greyish-blue);
+    }    
+    /*Fin de los ajustes para la sección social */
+
+    /* Ajustes para la sección del interruptor del modo oscuro */
+    .header-dark-mode {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        justify-content: space-between;
+        width: 158px;
+        color: var(--color-desaturated-blue);
+        font-weight: 700;
+        font-size: 0.95rem;
+        transition: all 0.5s ease-in;
+    }
+    
+    /* Ajustes para la etiqueta del modo oscuro */
+    .toggle-switch-label{
+        background-color: transparent;
+    }
+    
+    /* Ajustes para el botón del interruptor del modo oscuro */
+    .toggle-switch-button {
+        position: relative;
+        right: 15px;
+        width: 48px;
+        height: 24px;
+        background: linear-gradient(to right, hsl(230, 22%, 74%), hsl(230, 22%, 74%));
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        transition: all 1s ease-in;
+    }
+    
+    .toggle-switch-button:hover{
+        -webkit-filter: brightness(120%);
+        filter: brightness(120%);
+    }
+    /* Fin de los ajustes del botón */
+    
+    /* Ajustes del indicador visual del modo oscuro */
+    .toggle-switch-span {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 18.5px;
+        height: 18.5px;
+        background-color: var(--color-very-pale-blue);
+        border-radius: 50%;
+        transition: all 0.5s ease-in;
+        cursor: pointer;
+    }
+    
+    .toggle-switch-label:hover{
+        cursor: pointer;
+        color: var(--color-very-dark-blue);
+        -webkit-filter: brightness(120%);
+        filter: brightness(120%);
+    }
+  }
