@@ -9,7 +9,7 @@ export  default  defineConfig ( ( { command } ) =>  {
   } 
 
   if  (command !==  'serve' ) { 
-    config. base  =  '/social-media-theme-switcher/' 
+    config. base  =  '/social-media-theme-switcher' 
   } 
 
   return  config 
