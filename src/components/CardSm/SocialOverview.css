@@ -24,6 +24,7 @@
     column-gap: 2rem;
     row-gap: 1.75rem;
     width: auto;
+    margin-bottom: 55px;
 }
 
 /* Estilos para pantallas medianas aquí */
@@ -37,6 +38,7 @@
         column-gap: 2rem;
         row-gap: 1.75rem;
         width: auto;
+        margin-bottom: 55px;
     }
 }
 
@@ -51,6 +53,7 @@
         column-gap: 2rem;
         row-gap: 1.75rem;
         width: auto;
+        margin-bottom: 55px;
     }
 }
 
@@ -65,5 +68,6 @@
         column-gap: 2rem;
         row-gap: 1.75rem;
         width: auto;
+        margin-bottom: 55px;
     }
 }
