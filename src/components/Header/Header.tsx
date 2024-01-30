@@ -17,7 +17,7 @@ export default function Header() {
           {/* Titulo y estadísticas del encabezado */}
             <div
               // Aplicamos estilos dinámicos según el estado del tema (claro u oscuro)
-              className={`header-social ${theme.name === "dark" ? "dark-header" : ""} `}
+              className={` ${theme.name === "dark" ? "header-social header-social-dark" : "header-social header-social-light"} `}
             >
                 <h1>Social Media Dashboard</h1>
                 <p>Total Followers: 23,004</p>

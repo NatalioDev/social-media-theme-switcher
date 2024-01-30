@@ -20,6 +20,9 @@
     font-weight: 700;
     margin: 0;
     padding: 0;
+}
+
+.header-social.header-social-light h1{
     color: var(--color-very-dark-blue);
 }
 
@@ -29,6 +32,9 @@
     font-weight: 700;
     margin: 0;
     padding: 0;
+}
+
+.header-social.header-social-light p {
     color: var(--color-dark-greyish-blue);
 }
 
@@ -94,11 +100,11 @@
     border-bottom: 1.5px solid var(--color-desaturated-blue);
 }
 
-.header-social.dark-header h1 {
+.header-social.header-social-dark h1 {
     color: var(--color-white);
 }
 
-.header-social.dark-header p {
+.header-social.header-social-dark p {
     color: var(--color-desaturated-blue);
 }
 
