@@ -41,7 +41,6 @@
 /* Estilos para la etiqueta del interruptor del tema */
 .toggle-switch-label{
     color: var(--color-dark-greyish-blue);
-    transition: none;
 }
 
 /* Estilos para el botón del interruptor del tema */
@@ -111,7 +110,6 @@
 
 .toggle-switch-label.dark-mode{
     color: var(--color-desaturated-blue);
-    transition: none;
     background-color: transparent;
 }
 
