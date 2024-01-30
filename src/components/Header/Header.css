@@ -41,6 +41,7 @@
 /* Estilos para la etiqueta del interruptor del tema */
 .toggle-switch-label{
     color: var(--color-dark-greyish-blue);
+    transition: all;
 }
 
 /* Estilos para el botón del interruptor del tema */
