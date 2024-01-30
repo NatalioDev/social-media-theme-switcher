@@ -9,7 +9,7 @@ type Theme = { name: string};
 
 // Creamos el contexto
 export const ThemeContext = createContext<{ theme: Theme; toggleTheme: () => void }> ({
-    theme: darkTheme,
+    theme: darkTheme || lightTheme,
     toggleTheme: () => {},
 });
 
@@ -17,7 +17,7 @@ export const ThemeContext = createContext<{ theme: Theme; toggleTheme: () => voi
 export const ThemeContextProvider : React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [theme, setTheme] = useState(() => {
         const savedTheme = JSON.parse(localStorage.getItem("theme") || "null");
-        return savedTheme || darkTheme;
+        return savedTheme || darkTheme || lightTheme;
     });
 
      // Función para cambiar entre temas
@@ -25,6 +25,7 @@ export const ThemeContextProvider : React.FC<{ children: React.ReactNode }> = ({
         const newTheme = theme.name === "dark" ? lightTheme : darkTheme;
         setTheme(newTheme);
         document.body.classList.toggle('dark-mode', newTheme.name === "dark");
+        document.body.classList.toggle('light-mode', newTheme.name === "light");
     };
 
     // Valor que se pasa al contexto, incluyendo el tema y la función para cambiarlo
