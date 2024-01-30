@@ -6,6 +6,9 @@
   color-scheme: light dark;
   color: black;
   transition: all 1s ease-in;
+  background-color: var(--color-very-pale-blue);
+
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,7 +39,6 @@ body {
   margin: 0;
   width: auto;
   padding: 0 1.9rem 0 1.9rem;
-  background-color: var(--color-very-pale-blue);
 }
 
 
